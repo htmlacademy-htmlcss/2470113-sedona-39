@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Daria Galieva](https://up.htmlacademy.ru/htmlcss/39/user/2470113).
-* Наставник: `Неизвестно`.
+* Наставник: [Ирина Малиновская](https://htmlacademy.ru/profile/irina-malinovskaya).
 
 ---
 
