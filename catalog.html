@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Седона</title>
+  </head>
+
+  <body>
+    <header>
+      <nav>
+        <a href="#"><img src="img/logo.png" alt="логотип"></a>
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О Седоне</a></li>
+          <li><a href="#">Гостиницы</a></li>
+        </ul>
+        <button><img src="img/search.svg" alt="поиск"></button>
+        <button><img src="img/heart.svg" alt="избранное"></button>
+        <button>Хочу сюда!</button>
+      </nav>
+    </header>
+    <main>
+      <section class="hero">
+        <h1>Гостиницы Седоны</h1>
+        <ul>
+          <li><a href="#"><img src="img/homepage.svg"></a></li>
+          <li>Гостиницы</li>
+        </ul>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <fieldset class="infrastructure-container">
+            <legend>Инфраструктура:</legend>
+            <label><input type="checkbox" checked>Бассейн</label>
+            <label><input type="checkbox" checked>Парковка</label>
+            <label><input type="checkbox">Wi-Fi</label>
+          </fieldset>
+          <fieldset class="house-type-container">
+            <legend>Тип жилья:</legend>
+            <label><input type="radio" checked>Гостиница</label>
+            <label><input type="radio">Мотель</label>
+            <label><input type="radio">Апартаменты</label>
+          </fieldset>
+          <fieldset class="price-container">
+            <legend>Стоимость, ₽:</legend>
+            <input type="number">
+          </fieldset>
+          <fieldset><button type="submit" value="Применить">Применить</button>
+            <button type="reset" value="Сбросить">Сбросить</button>
+          </fieldset>
+        </form>
+      </section>
+      <section class="hotels">
+        <h2>Найдено гостиниц: <span class="hotels-number">38</span></h2>
+        <header class="hotels-header"></header>
+        <form action="https://echo.htmlacademy.ru/" method="get">
+          <select name="price-sort">
+            <option value="from-min">Сначала дешевые</option>
+            <option value="from-max">Сначала дорогие</option>
+          </select>
+        </form>
+        <button class="cards-view"></button>
+        <button class="grid-view"></button>
+        <button class="list-view"></button>
+        </header>
+        <ul class="hotels-list">
+          <li class="hotels-list-item">
+            <img src="img\hotel-1.jpg">
+            <h3>Amara Resort & Spa</h3>
+            <div class="price-container">
+              <p>Гостиница</p>
+              <p>От 4000 ₽</p>
+            </div>
+            <div class="links-container">
+              <a href="#" class="more">Подробнее</a>
+              <button class="favorite">В избранное</button>
+            </div>
+            <div class="rating-container">
+              <div class="star-container">
+                <img src="img/star.svg">
+                <img src="img/star.svg">
+                <img src="img/star.svg">
+                <img src="img/star.svg">
+              </div>
+              <p class="rating-text">Рейтинг: 8,5</p>
+            </div>
+          </li>
+          <li class="hotels-list-item">
+            <img src="img\hotel-2.jpg">
+            <h3></h3>
+            <div class="price-container">
+              <p>Гостиница</p>
+              <p>От 5000 ₽</p>
+            </div>
+            <div class="links-container">
+              <a href="#" class="more">Подробнее</a>
+              <button class="favorite">В избранное</button>
+            </div>
+            <div class="rating-container">
+              <div class="star-container"><img src="img/star.svg">
+                <img src="img/star.svg">
+                <img src="img/star.svg">
+                <img src="img/star.svg">
+              </div>
+              <p class="rating-text">Рейтинг: 9,2</p>
+            </div>
+          </li>
+          <li class="hotels-list-item">
+            <img src="img\hotel-3.jpg">
+            <h3>Desert Quail Inn</h3>
+            <div class="price-container">
+              <p>Гостиница</p>
+              <p>От 2500 ₽</p>
+            </div>
+            <div class="links-container">
+              <a href="#" class="more">Подробнее</a>
+              <button class="favorite">В избранное</button>
+            </div>
+            <div class="rating-container">
+              <div class="star-container"><img src="img/star.svg">
+                <img src="img/star.svg">
+                <img src="img/star.svg">
+              </div>
+              <p class="rating-text">Рейтинг: 6,9</p>
+            </div>
+          </li>
+          <li class="hotels-list-item">
+            <img src="img\hotel-4.jpg">
+            <h3>GreenTree Inn</h3>
+            <div class="price-container">
+              <p>Гостиница</p>
+              <p>От 1500 ₽</p>
+            </div>
+            <div class="links-container">
+              <a href="#" class="more">Подробнее</a>
+              <button class="favorite">В избранное</button>
+            </div>
+            <div class="rating-container">
+              <div class="star-container"><img src="img/star.svg">
+                <img src="img/star.svg">
+              </div>
+              <p class="rating-text">Рейтинг: 5,0</p>
+            </div>
+          </li>
+        </ul>
+        <div class="pagination-list">
+          <ul>
+            <li class="pagination-item active">1</li>
+            <li class="pagination-item">2</li>
+            <li class="pagination-item">3</li>
+            <li class="pagination-item">4</li>
+            <li class="pagination-divider">...</li>
+            <li class="pagination-item">10</li>
+          </ul>
+        </div>
+      </section>
+      <section class="subscribe">
+        <h2>Подпишитесь на рассылку</h2>
+        <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <input type="text">
+          <button type="submit">Подписаться</button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li><a href="#"><img src="img/vk.svg" alt="VKontakte"></a></li>
+        <li><a href="#"><img src="img/tg.svg" alt="Telegram"></a></li>
+        <li><a href="#"><img src="img/yt.svg" alt="YouTube"></a></li>
+      </ul>
+      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a href="#"><img src="img\HTML Academy.svg" alt="HTML Academy"></a>
+    </footer>
+  </body>
