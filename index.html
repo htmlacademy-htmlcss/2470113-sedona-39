@@ -6,24 +6,22 @@
     <title>HTML Academy: Седона</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-      href="https: //fonts.googleapis.com/css2?family=Inter&family=Montserrat&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
     <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
       <nav>
-        <a href="#"><img src="img/logo.png" alt="логотип"></a>
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">О Седоне</a></li>
-          <li><a href="#">Гостиницы</a></li>
+        <a href="#" class="logo"><img src="img/logo.png" alt="логотип"></a>
+        <ul class="main-navigation-list">
+          <li><a class="main-navigation-item" href="#">Главная</a></li>
+          <li><a class="main-navigation-item" href="#">О Седоне</a></li>
+          <li><a class="main-navigation-item" href="#">Гостиницы</a></li>
         </ul>
-        <button><img src="img/search.svg" alt="поиск"></button>
-        <button><img src="img/heart.svg" alt="избранное"></button>
-        <button>Хочу сюда!</button>
+        <a class="search-link"><img src="img/search.svg" alt="поиск"></a>
+        <button class="favorite-list"><img src="img/heart.svg" alt="избранное"></button>
+        <button class="want-button">Хочу сюда!</button>
       </nav>
     </header>
     <main>
@@ -31,50 +29,65 @@
         <img src="img\index-background.png" alt="вид Седоны">
         <h1>Welcome to the gorgeous Sedona</h1>
       </section>
-      <section class="advantages"></section>
-      <h2>Седона — небольшой городок в Аризоне,<br />заслуживающий большего!</h2>
-      <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
-      <ul>
-        <li>
-          <h3>Настоящий городок</h3>
-          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-          <img src="img\photo-1.jpg" alt="вид города">
-        </li>
-        <li>
-          <h3>Небольшая площадь</h3>
-          <p>Все достопримечательности находятся очень близко</p>
-        </li>
-        <li>
-          <h3>Красивая дорога</h3>
-          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-        </li>
-        <li>
-          <h3>Мало туристов</h3>
-          <p>Большинство едет в Гранд Каньон и толпится там</p>
-        </li>
-        <li>
-          <h3>Там есть мост дьявола</h3>
-          <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
-          <img src="img\photo-2.jpg" alt="мост дьявола">
-        </li>
-      </ul>
+      <section class="advantages">
+        <h2>Седона — небольшой городок в Аризоне,<br />заслуживающий большего!</h2>
+        <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <ul>
+          <li class="advantages-item advantages-item-1">
+            <div class="advantages-item-content">
+              <h3>Настоящий<br />городок</h3>
+              <div class="advantages-line"></div>
+              <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+            </div>
+            <img src="img\photo-1.jpg" alt="вид города">
+          </li>
+          <li class="advantages-item advantages-item-2">
+            <div class="advantages-item-content">
+              <h3>Небольшая<br />площадь</h3>
+              <div class="advantages-line"></div>
+              <p>Все достопримечательности находятся очень близко</p>
+            </div>
+          </li>
+          <li class="advantages-item advantages-item-3">
+            <div class="advantages-item-content">
+              <h3>Красивая<br />дорога</h3>
+              <div class="advantages-line"></div>
+              <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+          </li>
+          <li class="advantages-item advantages-item-4">
+            <div class="advantages-item-content">
+              <h3>Мало<br />туристов</h3>
+              <div class="advantages-line"></div>
+              <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+          </li>
+          <li class="advantages-item advantages-item-5">
+            <div class="advantages-item-content">
+              <h3>Там есть<br />мост дьявола</h3>
+              <div class="advantages-line"></div>
+              <p>Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+            </div>
+            <img src="img\photo-2.jpg" alt="мост дьявола">
+          </li>
+        </ul>
       </section>
-      <section class="hotels">
-        <h2>Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
+      <section class="welcome">
+        <h2>Приезжайте в Седону отдохнуть<br />в комфорте и уюте!</h2>
         <p>Опытный персонал и качественное обслуживание!</p>
         <ul>
           <li>
-            <img src="img\home.svg" alt="">
+            <img src="img\home.svg" width="75" height="72" alt="жильё">
             <h3>Жильё</h3>
             <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
           </li>
           <li>
-            <img src="img\food.svg" alt="">
+            <img src="img\food.svg" width="64" height="76" alt="еда">
             <h3>Еда</h3>
             <p>Всегда заказывайте топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li>
-            <img src="img\gift.svg" alt="">
+            <img src="img\gift.svg" width="74" height="70" alt="сувениры">
             <h3>Сувениры</h3>
             <p>Не только китайского, но и настоящего местного производства!</p>
           </li>
@@ -103,7 +116,7 @@
       <a href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a href="#"><img src="img\HTML Academy.svg" alt="HTML Academy"></a>
     </footer>
-
+    <script src="js/script.js"></script>
   </body>
 
 </html>

@@ -1,3 +1,247 @@
 body {
   font-family: 'PT Sans', sans-serif;
+  background-color: #F2F2F2;
+  margin: 0;
+  padding: 0;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+p {
+  font-size: 22px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 90px;
+}
+section {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 96px;
+}
+
+.main-header {
+  width: 1200px;
+  height: 64px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 0 70px;
+  background-color: #ffffff;
+}
+
+nav {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  width: 1060px;
+  height: 64px;
+}
+
+nav .logo {
+  margin: 0;
+  margin-right: 28px;
+}
+
+.main-navigation-list {
+  display: flex;
+  margin-right: auto;
+}
+
+.main-navigation-item {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0em;
+  color: black;
+  padding: 20px 16px;
+}
+
+.search-link {
+  padding: 22px 12px;
+  margin: 0;
+}
+
+.favorite-list {
+  border: 0;
+  background-color: #ffffff;
+  padding: 24px 13px 23px;
+  margin-right: 20px;
+}
+
+.button {
+  padding: 8px 34px;
+  background-color: #756157;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+main {
+  width: 1200px;
+  box-sizing: border-box;
+  background-color: #ffffff;
+  margin: 0 auto;
+}
+
+h1 {
+  display: none;
+}
+
+.hero {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 70px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+.advantages {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 64px;
+}
+
+.advantages ul {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 385px 385px 385px;
+}
+
+.advantages-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.advantages-item-content {
+  width: 400px;
+  padding: 0;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+font-size: 24px;
+font-weight: 700;
+line-height: 28px;
+letter-spacing: 0em;
+text-align: center;
+margin: 0;
+padding: 0;
+margin-bottom: 30px;
+text-transform: uppercase;
+}
+.advantages-line {
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 60px;
+  height: 2px;
+  margin-bottom: 30px;
+}
+.advantages-item-content p, .welcome li p {
+font-size: 18px;
+font-weight: 400;
+line-height: 21px;
+letter-spacing: 0em;
+text-align: center;
+margin: 0;
+padding: 0;
+width: 230px;
+}
+
+.advantages-item-1, .advantages-item-5 {
+  grid-column: 1/4;
+  background-color: #82B3D3;
+}
+
+.advantages-item-1 .advantages-item-content, .advantages-item-5 .advantages-item-content {
+  color:white;
+}
+.advantages-item-1 .advantages-line, .advantages-item-5 .advantages-line {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.advantages-item-5 {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.advantages-item-2 {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+.advantages-item-3 {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.advantages-item-4 {
+background-color: rgba(131, 179, 211, 0.12);
+}
+
+.welcome ul {
+  display: grid;
+  grid-template-columns: 400px 400px 400px;
+  grid-template-rows: 385px;
+  margin: 0;
+  padding: 0;
+}
+.welcome li {
+  box-sizing: border-box;
+  width: 400px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+.welcome li img {
+  height: 75px;
+  margin: 0;
+  margin-bottom: 30px;
+}
+.homes {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+.souvenirs {
+  background-color: rgba(131, 179, 211, 0.12)
+}
+.booking p {
+margin-bottom: 54px;
+}
+.booking .button {
+  display: block;
+  margin: 0 auto;
+  width: fit-content;
+}
+
+.subscribe {
+  background-image: url(img\subscribe-background.jpg);
 }
