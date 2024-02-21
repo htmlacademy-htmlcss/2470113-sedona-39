@@ -4,30 +4,36 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap">
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body>
-    <header>
+    <header class="main-header">
       <nav>
-        <a href="#"><img src="img/logo.png" alt="логотип"></a>
-        <ul>
-          <li><a href="#">Главная</a></li>
-          <li><a href="#">О Седоне</a></li>
-          <li><a href="#">Гостиницы</a></li>
+        <a href="#" class="logo"><img src="img/logo.png" alt="логотип"></a>
+        <ul class="main-navigation-list">
+          <li><a class="main-navigation-item" href="#">Главная</a></li>
+          <li><a class="main-navigation-item" href="#">О Седоне</a></li>
+          <li><a class="main-navigation-item" href="#">Гостиницы</a></li>
         </ul>
-        <button><img src="img/search.svg" alt="поиск"></button>
-        <button><img src="img/heart.svg" alt="избранное"></button>
-        <button>Хочу сюда!</button>
+        <a class="search-link"><img src="img/search.svg" alt="поиск"></a>
+        <button class="favorite-list"><img src="img/heart.svg" alt="избранное"></button>
+        <button class="link-button">Хочу сюда!</button>
       </nav>
     </header>
     <main>
-      <section class="hero">
+      <section class="catalog-hero">
         <h1>Гостиницы Седоны</h1>
-        <ul>
-          <li><a href="#"><img src="img/homepage.svg"></a></li>
+        <ul class="breadcrumbs">
+          <li><a href="#"><img src="img/homepage.svg" width="13" height="15"></a></li>
+          <li>></li>
           <li>Гостиницы</li>
         </ul>
-        <form action="https://echo.htmlacademy.ru/" method="post">
+        <form action="https://echo.htmlacademy.ru/" method="post" class="hotels-form">
           <fieldset class="infrastructure-container">
             <legend>Инфраструктура:</legend>
             <label><input type="checkbox" checked>Бассейн</label>
@@ -44,25 +50,28 @@
             <legend>Стоимость, ₽:</legend>
             <input type="number">
           </fieldset>
-          <fieldset><button type="submit" value="Применить">Применить</button>
-            <button type="reset" value="Сбросить">Сбросить</button>
+          <fieldset class="submit-container">
+            <button class="submit" type="submit" value="Применить">Применить</button>
+            <button class="reset" type="reset" value="Сбросить">Сбросить</button>
           </fieldset>
         </form>
       </section>
       <section class="hotels">
-        <h2>Найдено гостиниц: <span class="hotels-number">38</span></h2>
-        <header class="hotels-header"></header>
-        <form action="https://echo.htmlacademy.ru/" method="get">
-          <select name="price-sort">
-            <option value="from-min">Сначала дешевые</option>
-            <option value="from-max">Сначала дорогие</option>
-          </select>
-        </form>
-        <button class="cards-view"></button>
-        <button class="grid-view"></button>
-        <button class="list-view"></button>
+        <header class="hotels-header">
+          <h2>Найдено гостиниц: <span class="hotels-number">38</span></h2>
+          <form action="https://echo.htmlacademy.ru/" method="get">
+            <select class="price-sort" name="price-sort">
+              <option value="from-min">Сначала дешевые</option>
+              <option value="from-max">Сначала дорогие</option>
+            </select>
+          </form>
+          <ul class="view-list">
+          <li class="view-item"><button class="button-view cards-view active"><img src="img/cards.svg"></button></li>
+          <li class="view-item"><button class="button-view grid-view"><img src="img/grid.svg"></button></li>
+          <li class="view-item"><button class="button-view list-view"><img src="img/list.svg"></button></li>
+        </ul>
         </header>
-        <ul class="hotels-list">
+        <ul class="hotels-list cards">
           <li class="hotels-list-item">
             <img src="img\hotel-1.jpg">
             <h3>Amara Resort & Spa</h3>
@@ -71,7 +80,7 @@
               <p>От 4000 ₽</p>
             </div>
             <div class="links-container">
-              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="more link-button">Подробнее</a>
               <button class="favorite">В избранное</button>
             </div>
             <div class="rating-container">
@@ -86,14 +95,14 @@
           </li>
           <li class="hotels-list-item">
             <img src="img\hotel-2.jpg">
-            <h3></h3>
+            <h3>Villas at Poco Diablo</h3>
             <div class="price-container">
               <p>Гостиница</p>
               <p>От 5000 ₽</p>
             </div>
             <div class="links-container">
-              <a href="#" class="more">Подробнее</a>
-              <button class="favorite">В избранное</button>
+              <a href="#" class="more link-button">Подробнее</a>
+              <button class="favorite active">В избранном</button>
             </div>
             <div class="rating-container">
               <div class="star-container"><img src="img/star.svg">
@@ -112,7 +121,7 @@
               <p>От 2500 ₽</p>
             </div>
             <div class="links-container">
-              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="more link-button">Подробнее</a>
               <button class="favorite">В избранное</button>
             </div>
             <div class="rating-container">
@@ -131,7 +140,7 @@
               <p>От 1500 ₽</p>
             </div>
             <div class="links-container">
-              <a href="#" class="more">Подробнее</a>
+              <a href="#" class="more link-button">Подробнее</a>
               <button class="favorite">В избранное</button>
             </div>
             <div class="rating-container">
@@ -142,8 +151,8 @@
             </div>
           </li>
         </ul>
-        <div class="pagination-list">
-          <ul>
+        <div class="pagination">
+          <ul class="pagination-list">
             <li class="pagination-item active">1</li>
             <li class="pagination-item">2</li>
             <li class="pagination-item">3</li>
@@ -156,8 +165,8 @@
       <section class="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <input type="text">
+        <form action="https://echo.htmlacademy.ru/" method="post" class="subscibe-form">
+          <input type="text" placeholder="Ваш e-mail">
           <button type="submit">Подписаться</button>
         </form>
       </section>
@@ -168,7 +177,7 @@
         <li><a href="#"><img src="img/tg.svg" alt="Telegram"></a></li>
         <li><a href="#"><img src="img/yt.svg" alt="YouTube"></a></li>
       </ul>
-      <a href="tel:+78128121212">+7 (812) 812-12-12</a>
+      <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
       <a href="#"><img src="img\HTML Academy.svg" alt="HTML Academy"></a>
     </footer>
   </body>
