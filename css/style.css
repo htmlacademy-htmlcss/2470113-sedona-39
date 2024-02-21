@@ -32,7 +32,6 @@ p {
 section {
   margin: 0;
   padding: 0;
-  margin-bottom: 96px;
 }
 
 .main-header {
@@ -247,6 +246,7 @@ h3 {
   grid-template-rows: 385px;
   margin: 0;
   padding: 0;
+  margin-bottom: 96px;
 }
 
 .welcome li {
@@ -283,6 +283,7 @@ h3 {
   display: block;
   margin: 0 auto;
   width: fit-content;
+  margin-bottom: 96px;
 }
 
 .subscribe {
@@ -666,7 +667,8 @@ fieldset {
 .pagination {
   margin: 0;
   margin-top: 40px;
-  padding: 40px 0;
+  padding: 0;
+  padding-top: 40px;
   border-top: 1px solid #E6E6E6;
 }
 .pagination-list {
