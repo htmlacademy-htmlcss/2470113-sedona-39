@@ -1,8 +1,48 @@
+/* Основные стили для всех страниц */
 body {
   font-family: 'PT Sans', sans-serif;
   background-color: #F2F2F2;
   margin: 0;
   padding: 0;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.disabled {
+  color: rgba(0, 0, 0, 0.3);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+h1 {
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 78px;
+  letter-spacing: 0em;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
 ul {
@@ -34,6 +74,128 @@ section {
   padding: 0;
 }
 
+/* Кнопки */
+/* коричневая кнопка-ссылка */
+.link-button {
+  padding: 8px 34px;
+  background-color: #756157;
+  text-transform: uppercase;
+  color: #ffffff;
+  border: 0;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+}
+
+.link-button:hover {
+  background-color: #615048;
+  color: white;
+}
+
+.link-button:focus {
+  background-color: #615048;
+}
+
+.link-button:active {
+  background-color: #756157;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* голубая кнопка-действие */
+button {
+  margin: 0;
+  border: 0;
+  background-color: #82B3D3;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+button:hover {
+  background-color: #68A2CA;
+}
+
+button:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+button:focus {
+  background-color: #68A2CA;
+}
+
+.submit-container button {
+  padding: 8px 50px;
+  border-radius: 4px;
+  border: 0;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: white;
+  text-transform: uppercase;
+}
+
+button.active {
+  background-color: #7DB54F;
+}
+
+button.active:hover {
+  background-color: #6C9E42;
+}
+
+button.active:focus {
+  background-color: #6C9E42;
+}
+
+button.active:active {
+  background-color: #7DB54F;
+  color: rgba(255, 255, 255, 0.3);
+}
+
+/* Кнопки поиска */
+.submit-container .submit {
+  background-color: #82B3D3;
+}
+
+.submit-container .submit:hover {
+  background-color: #68A2CA;
+}
+
+.submit-container .submit:focus {
+  background-color: #68A2CA;
+}
+
+.submit-container .submit:active {
+  background-color: #82B3D3;
+}
+
+.submit-container .reset {
+  background-color: transparent;
+  border: 3px solid transparent;
+}
+
+.submit-container .reset:hover {
+  opacity: 60%;
+  border: 3px solid transparent;
+}
+
+.submit-container .reset:focus {
+  border: 3px solid #83B3D3;
+}
+
+.submit-container .reset:active {
+  opacity: 30%;
+  border: 3px solid transparent;
+}
+
+/* Верхнее меню */
 .main-header {
   width: 1200px;
   height: 64px;
@@ -75,6 +237,16 @@ nav .logo {
   padding: 20px 16px;
 }
 
+.main-navigation-item:hover,
+.main-navigation-item.active {
+  text-decoration: underline;
+  text-decoration-color: #756257;
+  text-decoration-thickness: 2px;
+  text-underline-position: under;
+  text-underline-offset: 21px;
+  color: black;
+}
+
 .search-link {
   padding: 22px 12px;
   margin: 0;
@@ -87,19 +259,7 @@ nav .logo {
   margin-right: 20px;
 }
 
-.link-button {
-  padding: 8px 34px;
-  background-color: #756157;
-  text-transform: uppercase;
-  color: #ffffff;
-  border: 0;
-  border-radius: 4px;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0em;
-}
-
+/* основной блок */
 main {
   width: 1200px;
   box-sizing: border-box;
@@ -109,26 +269,13 @@ main {
   padding: 0;
 }
 
-.visually-hidden {
-  display: none;
-}
-
-h1 {
-  font-size: 60px;
-  font-weight: 700;
-  line-height: 78px;
-  letter-spacing: 0em;
-  text-align: left;
-  margin: 0;
-  padding: 0;
-}
-
 .hero {
   margin: 0;
   padding: 0;
   margin-bottom: 70px;
 }
 
+/* Главная*/
 .hero-main {
   background-image: url("../img/index-background.png");
   height: 485px;
@@ -137,14 +284,6 @@ h1 {
   align-items: center;
   justify-content: end;
   gap: 25px;
-}
-
-h2 {
-  font-size: 30px;
-  font-weight: 700;
-  line-height: 36px;
-  text-align: center;
-  text-transform: uppercase;
 }
 
 .advantages {
@@ -174,18 +313,6 @@ h2 {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-
-h3 {
-  font-size: 24px;
-  font-weight: 700;
-  line-height: 28px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin: 0;
-  padding: 0;
-  margin-bottom: 30px;
-  text-transform: uppercase;
 }
 
 .advantages-line {
@@ -326,17 +453,9 @@ h3 {
   width: 232px;
   height: 52px;
   border-radius: 0px 4px 4px 0;
-  margin: 0;
-  border: 0;
-  background-color: rgba(130, 179, 211, 1);
-  font-size: 20px;
-  font-weight: 700;
-  line-height: 36px;
-  text-align: center;
-  color: #ffffff;
-  text-transform: uppercase;
 }
 
+/* Подвал */
 footer {
   width: 1200px;
   box-sizing: border-box;
@@ -371,6 +490,21 @@ footer .phone {
   color: black;
 }
 
+footer .phone:hover,
+footer .phone:focus,
+footer .copyright:hover,
+footer .copyright:focus {
+  color: #756157;
+}
+footer .copyright {
+  color:black;
+}
+footer .phone:active, footer .copyright:active {
+  color: rgba(117, 97, 87, 0.3);
+}
+
+/* Каталог */
+/* Форма поиска */
 .catalog-hero {
   background-image: url(../img/catalog-background.jpg);
   padding: 70px;
@@ -383,16 +517,30 @@ footer .phone {
   margin-bottom: 8px;
 }
 
+/* хлебные крошки */
+
 .breadcrumbs {
   display: flex;
-  color: white;
   gap: 10px;
+  margin-bottom: 40px;
+  align-items: center;
+  color: white;
+}
+
+.breadcrumb {
   font-size: 16px;
   font-weight: 400;
   line-height: 21px;
   text-align: left;
-  align-items: center;
-  margin-bottom: 40px;
+
+}
+
+.breadcrumb:hover {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.breadcrumb:active {
+  color: rgba(255, 255, 255, 0.3);
 }
 
 .hotels-form {
@@ -430,6 +578,22 @@ fieldset {
   margin-right: auto;
 }
 
+/* стилизация чекбокса. Не получилась */
+.checkbox {
+  background-color: white;
+  border: 0;
+  border-radius: 4px;
+  padding: 4px;
+}
+
+label:hover {
+  opacity: 60%;
+}
+
+label:active {
+  opacity: 30%;
+}
+
 .price-container {
   margin: 0;
   padding: 0;
@@ -457,27 +621,6 @@ fieldset {
   padding-top: 56px;
   display: flex;
   justify-content: space-between;
-}
-
-.submit-container button {
-  padding: 8px 50px;
-  border-radius: 4px;
-  border: 0;
-  font-size: 16px;
-  font-weight: 700;
-  line-height: 20px;
-  letter-spacing: 0em;
-  text-align: center;
-  color: white;
-  text-transform: uppercase;
-}
-
-.submit-container .submit {
-  background-color: #82B3D3;
-}
-
-.submit-container .reset {
-  background-color: transparent;
 }
 
 .hotels {
@@ -512,6 +655,14 @@ fieldset {
   border-radius: 4px;
 }
 
+.price-sort:hover {
+  border: 2px solid #68A2CA;
+}
+
+.price-sort:focus {
+  border: 2px solid #68A2CA;
+}
+
 .price-sort option {
   font-size: 18px;
   font-weight: 400;
@@ -520,11 +671,13 @@ fieldset {
   text-align: left;
 }
 
+/* Список отелей */
 .hotels-header .view-list {
   display: flex;
   gap: 8px;
 }
 
+/* Кнопки сортировки */
 .hotels-header .button-view {
   width: 48px;
   height: 48px;
@@ -537,10 +690,24 @@ fieldset {
   background-color: white;
 }
 
-.hotels-header .button-view.active {
+.hotels-header .button-view:hover,
+.hotels-header .button-view:active {
   border-color: black;
+  background-color: white;
 }
 
+.hotels-header .button-view:focus,
+.hotels-header .button-view.active:focus {
+  border-color: #68A2CA;
+  background-color: white;
+}
+
+.hotels-header .button-view.active {
+  border-color: black;
+  background-color: white;
+}
+
+/* список отелей карточками */
 .hotels-list.cards {
   margin: 0;
   padding: 0;
@@ -608,20 +775,11 @@ fieldset {
 .hotels-list .hotels-list-item .links-container .favorite {
   box-sizing: border-box;
   padding: 8px 20px;
-  background-color: #82B3D3;
-  text-transform: uppercase;
-  color: white;
-  border: 0;
   font-family: 'PT Sans';
   font-size: 16px;
   font-weight: 700;
   line-height: 20px;
-  text-align: center;
   border-radius: 4px;
-}
-
-.hotels-list .hotels-list-item .links-container .favorite.active {
-  background-color: #7DB54F;
 }
 
 .hotels-list .hotels-list-item .rating-container {
@@ -664,6 +822,9 @@ fieldset {
   text-align: center;
   text-transform: uppercase;
 }
+
+/* Пагинация */
+
 .pagination {
   margin: 0;
   margin-top: 40px;
@@ -671,11 +832,13 @@ fieldset {
   padding-top: 40px;
   border-top: 1px solid #E6E6E6;
 }
+
 .pagination-list {
   display: flex;
   gap: 8px;
 }
-.pagination-item {
+
+.pagination-link {
   width: 60px;
   height: 60px;
   display: flex;
@@ -683,12 +846,28 @@ fieldset {
   align-items: center;
   background-color: #82B3D3;
   border-radius: 4px;
-font-size: 20px;
-font-weight: 700;
-line-height: 36px;
-text-align: center;
-color: white;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
+  color: white;
 }
+
+.pagination-link:hover {
+  background-color: #68A2CA;
+  color: white;
+}
+
+.pagination-link:focus {
+  background-color: #68A2CA;
+  color: white;
+}
+
+.pagination-link:active {
+  background-color: #82B3D3;
+  color: rgba(255, 255, 255, 0.3);
+}
+
 .pagination-divider {
   width: 60px;
   height: 60px;
@@ -696,12 +875,13 @@ color: white;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
-font-size: 20px;
-font-weight: 700;
-line-height: 36px;
-text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 36px;
+  text-align: center;
 }
-.pagination-item.active {
+
+.pagination-link.active {
   background-color: #F2F2F2;
   color: black
 }

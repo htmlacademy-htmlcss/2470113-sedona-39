@@ -16,9 +16,9 @@
       <nav>
         <a href="#" class="logo"><img src="img/logo.png" alt="логотип"></a>
         <ul class="main-navigation-list">
-          <li><a class="main-navigation-item" href="#">Главная</a></li>
+          <li><a class="main-navigation-item" href="index.html">Главная</a></li>
           <li><a class="main-navigation-item" href="#">О Седоне</a></li>
-          <li><a class="main-navigation-item" href="#">Гостиницы</a></li>
+          <li><a class="main-navigation-item active" href="catalog.html">Гостиницы</a></li>
         </ul>
         <a class="search-link"><img src="img/search.svg" alt="поиск"></a>
         <button class="favorite-list"><img src="img/heart.svg" alt="избранное"></button>
@@ -31,20 +31,20 @@
         <ul class="breadcrumbs">
           <li><a href="#"><img src="img/homepage.svg" width="13" height="15"></a></li>
           <li>></li>
-          <li>Гостиницы</li>
+          <li class="breadcrumb">Гостиницы</li>
         </ul>
         <form action="https://echo.htmlacademy.ru/" method="post" class="hotels-form">
           <fieldset class="infrastructure-container">
             <legend>Инфраструктура:</legend>
-            <label><input type="checkbox" checked>Бассейн</label>
-            <label><input type="checkbox" checked>Парковка</label>
-            <label><input type="checkbox">Wi-Fi</label>
+            <label><input class="checkbox" type="checkbox" checked>Бассейн</label>
+            <label><input class="checkbox" type="checkbox" checked>Парковка</label>
+            <label><input class="checkbox" type="checkbox">Wi-Fi</label>
           </fieldset>
           <fieldset class="house-type-container">
             <legend>Тип жилья:</legend>
-            <label><input type="radio" checked>Гостиница</label>
-            <label><input type="radio">Мотель</label>
-            <label><input type="radio">Апартаменты</label>
+            <label><input class="radio" type="radio" checked>Гостиница</label>
+            <label><input class="radio" type="radio">Мотель</label>
+            <label><input class="radio" type="radio">Апартаменты</label>
           </fieldset>
           <fieldset class="price-container">
             <legend>Стоимость, ₽:</legend>
@@ -153,12 +153,12 @@
         </ul>
         <div class="pagination">
           <ul class="pagination-list">
-            <li class="pagination-item active">1</li>
-            <li class="pagination-item">2</li>
-            <li class="pagination-item">3</li>
-            <li class="pagination-item">4</li>
+            <li class="pagination-item"><a class="pagination-link active">1</a></li>
+            <li class="pagination-item"><a class="pagination-link">2</a></li>
+            <li class="pagination-item"><a class="pagination-link">3</a></li>
+            <li class="pagination-item"><a class="pagination-link">4</a></li>
             <li class="pagination-divider">...</li>
-            <li class="pagination-item">10</li>
+            <li class="pagination-item"><a class="pagination-link">10</a></li>
           </ul>
         </div>
       </section>
