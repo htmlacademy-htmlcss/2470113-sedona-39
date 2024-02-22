@@ -491,20 +491,22 @@ footer .phone {
 }
 
 footer .phone:hover,
-footer .phone:focus,
-{
+footer .phone:focus {
   color: #756157;
 }
 
-footer .phone:active, {
+footer .phone:active {
   color: rgba(117, 97, 87, 0.3);
 }
 
+/* не получилась маска
 footer .copyright {
   background-color: #000;
   display: block;
   mask-image: url(../img/HTML-Academy.svg);
+  mask-mode: unset;
 }
+*/
 
 /* Каталог */
 /* Форма поиска */

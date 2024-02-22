@@ -12,7 +12,7 @@
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav>
         <a href="#" class="logo"><img src="img/logo.png" alt="логотип"></a>
         <ul class="main-navigation-list">
@@ -25,11 +25,11 @@
         <button class="link-button">Хочу сюда!</button>
       </nav>
     </header>
-    <main>
-      <section class="catalog-hero">
+    <main data-test="main">
+      <section class="catalog-hero" data-test="search">
         <h1>Гостиницы Седоны</h1>
         <ul class="breadcrumbs">
-          <li><a href="#"><img src="img/homepage.svg" width="13" height="15"></a></li>
+          <li><a href="index.html"><img src="img/homepage.svg" width="13" height="15"></a></li>
           <li>></li>
           <li class="breadcrumb">Гостиницы</li>
         </ul>
@@ -57,7 +57,7 @@
         </form>
       </section>
       <section class="hotels">
-        <header class="hotels-header">
+        <header class="hotels-header" data-test="filter">
           <h2>Найдено гостиниц: <span class="hotels-number">38</span></h2>
           <form action="https://echo.htmlacademy.ru/" method="get">
             <select class="price-sort" name="price-sort">
@@ -71,7 +71,7 @@
           <li class="view-item"><button class="button-view list-view"><img src="img/list.svg"></button></li>
         </ul>
         </header>
-        <ul class="hotels-list cards">
+        <ul class="hotels-list cards" data-test="catalog">
           <li class="hotels-list-item">
             <img src="img\hotel-1.jpg">
             <h3>Amara Resort & Spa</h3>
@@ -162,7 +162,7 @@
           </ul>
         </div>
       </section>
-      <section class="subscribe">
+      <section class="subscribe" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post" class="subscibe-form">
@@ -171,13 +171,13 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer data-test="footer">
       <ul>
         <li><a href="#"><img src="img/vk.svg" alt="VKontakte"></a></li>
         <li><a href="#"><img src="img/tg.svg" alt="Telegram"></a></li>
         <li><a href="#"><img src="img/yt.svg" alt="YouTube"></a></li>
       </ul>
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a href="#"><img src="img\HTML Academy.svg" alt="HTML Academy"></a>
+      <a href="#"><img src="img\HTML-Academy.svg" alt="HTML Academy"></a>
     </footer>
   </body>

@@ -11,26 +11,26 @@
   </head>
 
   <body>
-    <header class="main-header">
+    <header class="main-header" data-test="header">
       <nav>
         <a href="#" class="logo"><img src="img/logo.png" alt="логотип"></a>
         <ul class="main-navigation-list">
           <li><a class="main-navigation-item active" href="#">Главная</a></li>
           <li><a class="main-navigation-item" href="#">О Седоне</a></li>
-          <li><a class="main-navigation-item" href="#">Гостиницы</a></li>
+          <li><a class="main-navigation-item" href="catalog.html">Гостиницы</a></li>
         </ul>
         <a class="search-link"><img src="img/search.svg" alt="поиск"></a>
         <button class="favorite-list"><img src="img/heart.svg" alt="избранное"></button>
-        <a href="#" class="link-button">Хочу сюда!</a>
+        <a href="catalog.html" class="link-button">Хочу сюда!</a>
       </nav>
     </header>
-    <main>
-      <section class="hero hero-main">
+    <main data-test="main">
+      <section class="hero hero-main" data-test="hero">
         <h1 class="visually-hidden">Welcome to the gorgeous Sedona</h1>
         <img src="img\welcome.png" width="458">
         <img src="img\zipline.svg" width="1200">
       </section>
-      <section class="advantages">
+      <section class="advantages" data-test="advantages">
         <h2>Седона — небольшой городок в Аризоне,<br />заслуживающий большего!</h2>
         <p>Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
         <ul>
@@ -99,7 +99,7 @@
         <p>Укажите предполагаемые даты поездки,<br />и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <a href="catalog.html" class="link-button">ПОИСК ГОСТИНИЦЫ В седоне</a>
       </section>
-      <section class="subscribe subscribe-main">
+      <section class="subscribe subscribe-main" data-test="subscribe">
         <h2>Подпишитесь на рассылку</h2>
         <p>Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form action="https://echo.htmlacademy.ru/" method="post" class="subscibe-form">
@@ -108,14 +108,14 @@
         </form>
       </section>
     </main>
-    <footer>
+    <footer data-test="footer">
       <ul class="social-list">
         <li class="social-item"><a href="#"><img src="img/vk.svg" alt="VKontakte"></a></li>
         <li class="social-item"><a href="#"><img src="img/tg.svg" alt="Telegram"></a></li>
         <li class="social-item"><a href="#"><img src="img/yt.svg" alt="YouTube"></a></li>
       </ul>
       <a class="phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
-      <a class="copyright" href="#"><img src="img\HTML Academy.svg" alt="HTML Academy"></a>
+      <a class="copyright" href="#"><img src="img\HTML-Academy.svg" alt="HTML Academy"></a>
     </footer>
     <script src="js/script.js"></script>
   </body>
