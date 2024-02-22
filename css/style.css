@@ -492,15 +492,18 @@ footer .phone {
 
 footer .phone:hover,
 footer .phone:focus,
-footer .copyright:hover,
-footer .copyright:focus {
+{
   color: #756157;
 }
-footer .copyright {
-  color:black;
-}
-footer .phone:active, footer .copyright:active {
+
+footer .phone:active, {
   color: rgba(117, 97, 87, 0.3);
+}
+
+footer .copyright {
+  background-color: #000;
+  display: block;
+  mask-image: url(../img/HTML-Academy.svg);
 }
 
 /* Каталог */
