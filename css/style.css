@@ -199,6 +199,10 @@ button.active:active {
   opacity: 30%;
   border: 3px solid transparent;
 }
+.favorite-list:hover {
+color: transparent;
+background-color: transparent;
+}
 /* Верхнее меню */
 .main-header {
   width: 1200px;
