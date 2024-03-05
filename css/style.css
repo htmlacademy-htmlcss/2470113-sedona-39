@@ -791,7 +791,7 @@ label:active {
   margin: 0;
   font-family: 'PT Sans', sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 700;
   line-height: 21px;
   text-align: left;
   cursor: text;
@@ -800,7 +800,9 @@ label:active {
 }
 .min-price {
   border-radius: 4px 0px 0px 4px;
+  margin-right: 2px;
 }
+/*не получилось*/
 .min-price::before {
   content: "от";
 font-family: 'PT Sans', sans-serif;
