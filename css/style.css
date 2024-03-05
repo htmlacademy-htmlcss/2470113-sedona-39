@@ -800,7 +800,6 @@ label:active {
 }
 .min-price {
   border-radius: 4px 0px 0px 4px;
-  padding: 12px 20px;
 }
 .min-price::before {
   content: "от";
@@ -870,11 +869,10 @@ color: black;
   color: white;
   cursor: pointer;
 }
-
-.catalog-hero input {
-  margin: 0;
-  padding: 0;
-  margin-right: 16px;
+.infrastructure-container input {
+    margin: 0;
+    padding: 0;
+    margin-right: 16px;
 }
 
 .submit-container {
