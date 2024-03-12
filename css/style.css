@@ -1405,6 +1405,7 @@ background-position: center;
 }
 
 .pagination-link {
+  position: relative;
   width: 60px;
   height: 60px;
   display: -webkit-box;
@@ -1467,8 +1468,8 @@ background-position: center;
 
 .pagination-link.active {
   background-color: #F2F2F2;
-  color: black;
   cursor: default;
+  color: black;
 }
 
 .modal-container {
