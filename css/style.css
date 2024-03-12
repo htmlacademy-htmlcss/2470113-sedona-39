@@ -1055,12 +1055,13 @@ fieldset {
   line-height: 20px;
   border-radius: 4px;
   padding: 8px 50px;
-  border: 0;
+  border: 3px solid transparent;
 }
 
 .submit-container .reset:hover {
   opacity: 60%;
   border: 0;
+  border: 3px solid transparent;
 }
 
 .submit-container .reset:focus-visible {
@@ -1306,6 +1307,10 @@ background-position: center;
   -ms-flex-pack: justify;
   justify-content: space-between;
   margin-bottom: 16px;
+}
+.hotel-title-link,
+.hotel-title-link:hover {
+  color: black;
 }
 
 .hotel-text {
