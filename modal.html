@@ -156,7 +156,7 @@
         </a>
       </footer>
     </div>
-    <div class="modal-container">
+    <div class="modal-container visually-hidden">
       <div class="modal modal-search">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -180,11 +180,11 @@
             <input class="modal-input modal-quantity-adults" id="modal-quantity-adults" name="modal-quantity-adults" type="number" value="2" min="1">
             <label class="modal-label modal-label-childs" for="modal-quantity-childs">
               <span class="modal-label-text">Дети:</span>
-              <div class="modal-info">
+              <div class="modal-info" aria-labelledby="tooltip-label-info">
                 <span class="visually-hidden">Информация</span>
               </div>
               <div class="popover modal-popover">
-                <p class="modal-popover-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+                <p class="modal-popover-text" role="tooltip" id="tooltip-label-info">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
               </div>
             </label>
             <input class="modal-input modal-quantity-childs" id="modal-quantity-childs" name="modal-quantity-childs" type="number" value="2" min="0">
