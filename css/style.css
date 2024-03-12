@@ -1205,6 +1205,27 @@ fieldset {
   border-color: black;
   background-color: white;
 }
+.button-view.grid-view {
+  width: 48px;
+height: 48px;
+background-image: url('../img/grid.svg');
+background-repeat: no-repeat;
+background-position: center;
+}
+.button-view.cards-view {
+  width: 48px;
+height: 48px;
+background-image: url('../img/cards.svg');
+background-repeat: no-repeat;
+background-position: center;
+}
+.button-view.list-view {
+  width: 48px;
+height: 48px;
+background-image: url('../img/list.svg');
+background-repeat: no-repeat;
+background-position: center;
+}
 
 .favorite {
   border-radius: 4px;
