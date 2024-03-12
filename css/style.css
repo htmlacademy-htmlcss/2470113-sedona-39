@@ -519,25 +519,28 @@ main {
   padding-bottom: 81px;
   background-repeat: no-repeat;
   background-position-x: center;
-  background-position-y: 81px;
 }
 
 .homes {
-  background-color: rgba(131, 179, 211, 0.2);
+  background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../img/home.svg);
+  background-position-y: 81px;
 }
 
 .souvenirs {
   background-color: rgba(131, 179, 211, 0.12);
   background-image: url(../img/gift.svg);
+  background-position-y: 79px;
 }
 
 .food {
   background-image: url(../img/food.svg);
+  background-position-y: 82px;
 }
 
 .booking-text {
   padding: 0;
+  margin: 0 auto;
   margin-bottom: 54px;
   text-align: center;
 }
@@ -743,6 +746,7 @@ footer .phone:active {
   margin: 0;
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
 }
 
 .page-title {
@@ -817,6 +821,7 @@ fieldset {
   color: white;
   text-transform: capitalize;
   margin-bottom: 32px;
+  padding: 0;
 }
 
 .control:hover {
@@ -837,10 +842,11 @@ fieldset {
 .control {
   position: relative;
   display: block;
-  padding-left: 6px;
+  padding-left: 7px;
 }
 
 .control .control-mark {
+  box-sizing: border-box;
   position: absolute;
   left: 0px;
   top: 2px;
@@ -851,8 +857,9 @@ fieldset {
 }
 
 .checkbox:checked + .control-mark::before {
+  box-sizing: border-box;
   position: absolute;
-  top: 2px;
+  top: 0px;
   left: 0px;
   content: "";
   width: 20px;
@@ -862,7 +869,7 @@ fieldset {
   background-image: url("../img/Tick.svg");
   background-position: center;
   background-repeat: no-repeat;
-  background-position-y: 4px;
+  background-position-y: center;
 }
 
 .house-type-container {
@@ -1620,5 +1627,51 @@ font-weight: 700;
 line-height: 20px;
 letter-spacing: 0em;
 text-align: center;
+}
+.validity-quantity-childs {
+  grid-row: 10/11;
+  grid-column: -2/-1;
+}
+.modal-popover {
+  display: none;
+  position:absolute;
+  box-sizing: border-box;
+  width: 256px;
+  height: 143px;
+  padding: 15px 18px 18px 22px;
+  background-color: #333333;
+  border-radius: 10px;
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3);
+  right: 112px;
+  bottom: 25px;
+}
 
+.modal-popover::before {
+  content: "";
+  background-image: url("../img/triangle.svg");
+  width: 19px;
+  height: 9px;
+  background-position: center;
+  background-repeat: no-repeat;
+  position:absolute;
+  bottom: 100%;
+  left:0;
+  right:0;
+  margin-left: auto;
+  margin-right: auto;
+}
+.modal-popover-text {
+font-size: 16px;
+font-weight: 400;
+line-height: 20px;
+letter-spacing: 0em;
+text-align: left;
+color: #FFFFFF;
+text-transform: none;
+margin:0;
+padding: 0;
+}
+
+.modal-info:hover + .modal-popover {
+  display: block;
 }

@@ -178,12 +178,16 @@
               <span class="modal-label-text">Взрослые:</span>
             </label>
             <input class="modal-input modal-quantity-adults" id="modal-quantity-adults" name="modal-quantity-adults" type="number" value="2" min="1">
-            <span class="validity validity-quantity-adults"></span>
             <label class="modal-label modal-label-childs" for="modal-quantity-childs">
-              <span class="modal-label-text">Дети:</span><a class="modal-info"><span class="visually-hidden">Информация</span></a>
+              <span class="modal-label-text">Дети:</span>
+              <div class="modal-info">
+                <span class="visually-hidden">Информация</span>
+              </div>
+              <div class="popover modal-popover">
+                <p class="modal-popover-text">Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</p>
+              </div>
             </label>
             <input class="modal-input modal-quantity-childs" id="modal-quantity-childs" name="modal-quantity-childs" type="number" value="2" min="0">
-            <span class="validity validity-quantity-childs"></span>
       <button class="modal-submit">Найти</button>
       </form>
       </section>
