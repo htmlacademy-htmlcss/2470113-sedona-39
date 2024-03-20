@@ -1,17 +1,3 @@
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
-/*
-* Prefixed by https://autoprefixer.github.io
-* PostCSS: v8.4.14,
-* Autoprefixer: v10.4.7
-* Browsers: last 4 version
-*/
-
 /* Основные стили для всех страниц */
 @font-face {
   font-family: "PT Sans";
@@ -28,23 +14,19 @@
 }
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
   background-color: #F2F2F2;
-  margin: 0;
-  padding: 0;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
-}
-
-ul {
-  list-style: none;
   margin: 0;
   padding: 0;
 }
 
 img {
-  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
 }
 
 .visually-hidden {
@@ -52,18 +34,14 @@ img {
   width: 1px;
   height: 1px;
   margin: -1px;
-  padding: 0;
   border: 0;
   clip: rect(0 0 0 0);
   overflow: hidden;
-}
-
-a {
-  text-decoration: none;
+  padding: 0;
 }
 
 * {
-  font-family: 'PT Sans', sans-serif;
+  font-family: "PT Sans", sans-serif;
 }
 
 .container {
@@ -121,25 +99,31 @@ a {
   font-weight: 700;
   line-height: 20px;
   letter-spacing: 0em;
+  text-decoration: none;
 }
 
 .link-button:hover {
   background-color: #615048;
   color: white;
+  text-decoration: none;
 }
 
 .link-button:focus-visible {
   background-color: #615048;
+  outline: none;
+  text-decoration: none;
 }
 
 .link-button:active {
   background-color: #756157;
   color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
 }
 
 /* голубая кнопка-действие */
 button {
   margin: 0;
+  padding: 0;
   border: 0;
   background-color: #82B3D3;
   font-size: 20px;
@@ -162,6 +146,7 @@ button:active {
 
 button:focus-visible {
   background-color: #68A2CA;
+  outline: none;
 }
 
 .favorite-list:hover {
@@ -191,8 +176,8 @@ button:focus-visible {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
-  margin-right: auto;
   padding: 0;
+  margin-right: auto;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -203,6 +188,7 @@ button:focus-visible {
 
 .main-nav .logo {
   margin: 0;
+  padding: 0;
   margin-right: 28px;
   -ms-flex-item-align: start;
   align-self: flex-start;
@@ -214,7 +200,10 @@ button:focus-visible {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
   margin-right: auto;
+  list-style: none;
 }
 
 .main-navigation-item {
@@ -223,7 +212,9 @@ button:focus-visible {
   line-height: 24px;
   letter-spacing: 0em;
   color: black;
+  margin: 0;
   padding: 20px 16px;
+  text-decoration: none;
 }
 
 .main-navigation-item:hover,
@@ -259,6 +250,7 @@ button:focus-visible {
   background-image: url("../img/search.svg");
   background-position: center;
   background-repeat: no-repeat;
+  text-decoration: none;
 }
 
 .favorite-list {
@@ -267,6 +259,7 @@ button:focus-visible {
   border: 0;
   background-color: transparent;
   padding: 24px 13px 23px;
+  margin: 0;
   margin-right: 20px;
   background-image: url("../img/heart.svg");
   height: 64px;
@@ -275,6 +268,8 @@ button:focus-visible {
 }
 
 .notifications {
+  margin: 0;
+  padding: 0;
   position: relative;
   bottom: 13px;
   left: 8px;
@@ -301,11 +296,11 @@ button:focus-visible {
 /* основной блок */
 main {
   width: 100%;
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   background-color: #ffffff;
-  margin: 0;
-  padding: 0;
 }
 
 .hero {
@@ -315,13 +310,14 @@ main {
 }
 
 .hero-img {
-  margin-top: 51px;
+  margin: 0;
+  padding: 0;
 }
 
 /* Главная*/
 .hero-main {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-image: url("../img/zipline.svg"),
     url("../img/index-background.png");
   min-height: 485px;
@@ -329,39 +325,51 @@ main {
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
   background-repeat: no-repeat;
-  background-position: bottom;
+  background-position: bottom -1px right 50%,
+    bottom;
   background-size: contain,
-  cover;
-  padding: 0px 20px 40px 20px;
+    cover;
+  margin: 0;
+  padding: 51px 40px 82px;
 }
+
 .section-text {
   max-width: 800px;
   margin: 0 auto;
 }
 
 .advantages {
+  margin: 0;
+  padding-top: 69px;
   margin-bottom: 64px;
 }
 
 .advantages .section-title {
+  margin: 0 auto;
+  padding: 0;
   margin-bottom: 25px;
 }
 
 .advantages-main-text {
+  margin: 0 auto;
+  padding: 0;
   margin-bottom: 90px;
   text-align: center;
 }
 
 .advantages ul {
+  margin: 0;
+  padding: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: repeat (3, 400px);
-  grid-template-columns: repeat (3, 400px)
+  grid-template-columns: repeat (3, 400px);
+  list-style: none;
 }
 
 .advantages-item {
@@ -379,6 +387,8 @@ main {
   -ms-flex-align: center;
   align-items: center;
   min-height: 385px;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-title {
@@ -389,8 +399,8 @@ main {
   letter-spacing: 0em;
   text-align: center;
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
+  margin-bottom: 30px;
   text-transform: uppercase;
   -webkit-box-ordinal-group: 0;
   -ms-flex-order: 1;
@@ -398,8 +408,9 @@ main {
 }
 
 .advantages-item-content {
-  width: 400px;
+  margin: 0;
   padding: 0;
+  width: 400px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   display: -webkit-box;
@@ -421,27 +432,24 @@ main {
 .advantages-item-content::after {
   content: "";
   width: 60px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-box-ordinal-group: 3;
-      -ms-flex-order: 2;
-          order: 2;
+  -ms-flex-order: 2;
+  order: 2;
 }
 
-.advantages-item-1 .advantages-item-content::after {
-  content: "";
-  width: 60px;
-  margin-bottom: 30px;
-  border-bottom: 2px solid rgba(255, 255, 255, 0.3);
-}
-
+.advantages-item-1 .advantages-item-content::after,
 .advantages-item-5 .advantages-item-content::after {
   content: "";
   width: 60px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 30px;
   border-bottom: 2px solid rgba(255, 255, 255, 0.3);
 }
-
 /* конец псевдоэлементов */
 
 .advantages-text {
@@ -450,12 +458,12 @@ main {
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
-  margin: 0;
-  padding: 0;
   width: 230px;
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 3;
   order: 3;
+  margin: 0;
+  padding: 0;
 }
 
 .advantages-item-1,
@@ -513,14 +521,16 @@ main {
   margin: 0 auto;
   margin-bottom: 64px;
   text-align: center;
+  padding: 0;
 }
 
 .advice-item {
+  margin: 0;
+  padding: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 400px;
   min-height: 385px;
-  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -534,7 +544,6 @@ main {
   -webkit-box-pack: start;
   -ms-flex-pack: start;
   justify-content: start;
-  margin: 0;
   padding-bottom: 81px;
 }
 
@@ -550,8 +559,8 @@ main {
   letter-spacing: 0em;
   text-align: center;
   margin: 0;
-  margin-bottom: 30px;
   padding: 0;
+  margin-bottom: 30px;
   text-transform: uppercase;
   -webkit-box-ordinal-group: 1;
   -ms-flex-order: 2;
@@ -559,13 +568,13 @@ main {
 }
 
 .advice-text {
+  margin: 0;
+  padding: 0;
   font-size: 18px;
   font-weight: 400;
   line-height: 21px;
   letter-spacing: 0em;
   text-align: center;
-  margin: 0;
-  padding: 0;
   width: 230px;
   -webkit-box-ordinal-group: 3;
   -ms-flex-order: 3;
@@ -580,9 +589,10 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   margin: 81px auto 30px;
+  padding: 0;
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .souvenirs {
@@ -597,9 +607,10 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   margin: 79px auto 30px;
+  padding: 0;
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .food::before {
@@ -610,15 +621,16 @@ main {
   background-repeat: no-repeat;
   background-position: center;
   margin: 82px auto 30px;
+  padding: 0;
   -webkit-box-ordinal-group: 2;
-      -ms-flex-order: 1;
-          order: 1;
+  -ms-flex-order: 1;
+  order: 1;
 }
 
 .booking-text {
-  padding: 0;
   margin: 0 auto;
   margin-bottom: 54px;
+  padding: 0;
   text-align: center;
 }
 
@@ -644,7 +656,6 @@ main {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   padding: 96px 40px 0;
-  margin-bottom: 0;
   -webkit-box-pack: top;
   -ms-flex-pack: top;
   justify-content: top;
@@ -665,13 +676,13 @@ main {
 }
 
 .subscribe-text {
-  margin: 0;
-  padding: 0;
   width: 475px;
   font-size: 22px;
   font-weight: 400;
   line-height: 26px;
   letter-spacing: 0em;
+  margin: 0;
+  padding: 0;
   margin-bottom: 54px;
   text-align: center;
 }
@@ -680,6 +691,8 @@ main {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0;
+  padding: 0;
   margin-bottom: 104px;
 }
 
@@ -700,12 +713,18 @@ main {
   background-color: #F2F2F2;
 }
 
+.subscribe input:focus-visible {
+  outline: 3px solid #83B3D3;
+}
+
 .subscribe button {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 232px;
   height: 52px;
   border-radius: 0px 4px 4px 0;
+  margin: 0;
+  padding: 0;
 }
 
 /* Подвал */
@@ -725,17 +744,18 @@ footer {
 }
 
 .social-list {
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
   width: 142px;
-  padding: 0;
-  margin: 0;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .social-item {
@@ -761,10 +781,14 @@ footer {
   fill: #83B3D3;
 }
 
-.social-item svg:hover,
-.social-item svg:focus-visible {
+.social-item a:hover svg,
+.social-item a:focus-visible svg {
   fill: #68A2CA;
-  border: 0;
+}
+
+.social-item a:focus-visible {
+  outline: none;
+
 }
 
 .social-item svg:active {
@@ -779,13 +803,15 @@ footer .phone {
   letter-spacing: 0em;
   text-align: center;
   margin: 0 auto;
+  padding: 0;
   color: black;
+  text-decoration: none;
 }
 
 footer .phone:hover,
 footer .phone:focus-visible {
   color: #756157;
-  border: 0;
+  outline: none;
 }
 
 footer .phone:active {
@@ -807,9 +833,13 @@ footer .phone:active {
   fill: black;
 }
 
-.copyright svg:hover,
-.copyright svg:focus-visible {
+.copyright:hover svg,
+.copyright:focus-visible svg {
   fill: #756157;
+}
+
+.copyright:focus-visible {
+  outline: none;
 }
 
 .copyright svg:active {
@@ -830,19 +860,20 @@ footer .phone:active {
 }
 
 .page-title {
+  color: white;
   margin: 0;
   padding: 0;
-  color: white;
   margin-bottom: 8px;
 }
 
 /* хлебные крошки */
-
 .breadcrumbs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  margin: 0;
+  padding: 0;
   margin-bottom: 40px;
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -856,13 +887,12 @@ footer .phone:active {
   font-weight: 400;
   line-height: 21px;
   text-align: left;
-  margin-left: 10px;
-  padding-left: 10px;
   cursor: pointer;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .breadcrumb:first-child {
   width: 12px;
   height: 14px;
@@ -870,15 +900,16 @@ footer .phone:active {
   background-position: center top;
   background-repeat: no-repeat;
 }
+
 .breadcrumb:not(:first-child)::before {
   display: block;
-content: "";
-width: 8px;
-height: 20px;
-background-image: url("../img/arrow.svg");
-background-position: center;
-background-repeat: no-repeat;
-margin-right: 11px;
+  content: "";
+  width: 8px;
+  height: 20px;
+  background-image: url("../img/arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-right: 11px;
 }
 
 .breadcrumb:hover {
@@ -904,6 +935,8 @@ fieldset {
   -ms-flex-direction: column;
   flex-direction: column;
   border: 0;
+  margin: 0;
+  padding: 0;
 }
 
 .catalog-hero legend {
@@ -914,8 +947,9 @@ fieldset {
   text-align: left;
   color: white;
   text-transform: capitalize;
-  margin-bottom: 32px;
+  margin: 0;
   padding: 0;
+  margin-bottom: 32px;
 }
 
 .control:hover {
@@ -927,8 +961,6 @@ fieldset {
 }
 
 .infrastructure-container {
-  margin: 0;
-  padding: 0;
   margin-right: 70px;
   gap: 16px;
 }
@@ -936,12 +968,14 @@ fieldset {
 .control {
   position: relative;
   display: block;
+  margin: 0;
+  padding: 0;
   padding-left: 7px;
 }
 
 .control .control-mark {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
   left: 0px;
   top: 1px;
@@ -953,7 +987,7 @@ fieldset {
 
 .checkbox:checked + .control-mark::before {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: absolute;
   top: 0px;
   left: 0px;
@@ -998,8 +1032,6 @@ fieldset {
 }
 
 .range-wrapper-inputs {
-  margin: 0;
-  padding: 0;
   margin-bottom: 44px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1027,8 +1059,8 @@ fieldset {
   border-radius: 4px 0px 0px 4px;
   margin-right: 2px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .min-price-label,
@@ -1065,21 +1097,21 @@ fieldset {
 .max-price {
   border-radius: 0px 4px 4px 0px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .min-price:hover,
 .max-price:hover {
   background-color: #E6E6E6;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 
 .min-price:focus-visible,
 .max-price:focus-visible {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .min-price:active,
@@ -1118,14 +1150,14 @@ fieldset {
 }
 
 .range-toggle:focus-visible {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background-color: white;
 }
 
 .range-toggle:active {
-  border: 2px solid #83B3D3;
+  outline: 2px solid #83B3D3;
   -webkit-box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   box-shadow: 0px 4px 10px 0px rgba(0, 0, 0, 0.25);
   background-color: white;
@@ -1142,7 +1174,7 @@ fieldset {
 /* Кнопки поиска */
 .submit-container .submit {
   background-color: #82B3D3;
-  margin-bottom: 29px;
+  margin-bottom: 32px;
   font-size: 16px;
   line-height: 20px;
   border-radius: 4px;
@@ -1167,22 +1199,19 @@ fieldset {
   line-height: 20px;
   border-radius: 4px;
   padding: 8px 50px;
-  border: 3px solid transparent;
 }
 
 .submit-container .reset:hover {
   opacity: 60%;
-  border: 0;
-  border: 3px solid transparent;
 }
 
 .submit-container .reset:focus-visible {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
 }
 
 .submit-container .reset:active {
   opacity: 30%;
-  border: 3px solid transparent;
+  outline: 3px solid transparent;
 }
 
 .control {
@@ -1204,8 +1233,6 @@ fieldset {
 
 .submit-container {
   height: 104px;
-  margin: 0;
-  padding: 0;
   padding-top: 56px;
 }
 
@@ -1221,19 +1248,15 @@ fieldset {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  margin: 0;
-  padding: 0;
   margin-bottom: 40px;
 }
 
 .hotels-header-title {
   margin: 0;
-  padding: 0;
   margin-right: auto;
 }
 
 .hotels-header form {
-  margin: 0;
   margin-right: 70px;
 }
 
@@ -1259,29 +1282,33 @@ fieldset {
   appearance: none;
   /*-убираем стандартную стрелку*/
   overflow: hidden;
-  background: url('../img/arrow-down.svg');
+  background: url("../img/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: center right 18px;
 }
 
 .price-sort:hover,
 .price-sort:active {
-  border: 2px solid #68A2CA;
+  outline: 2px solid #68A2CA;
 }
 
 .price-sort:focus-visible {
   border: 2px solid #68A2CA;
+  outline: none;
 }
 
-/* Список отелей */
+/* Кнопки сортировки */
 .view-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
-/* Кнопки сортировки */
+
 .hotels-header .button-view {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1311,8 +1338,9 @@ fieldset {
 
 .hotels-header .button-view:focus-visible,
 .hotels-header .button-view.active:focus-visible {
-  border-color: #68A2CA;
+  border: 2px solid #68A2CA;
   background-color: white;
+  outline: #68A2CA;
 }
 
 .hotels-header .button-view.active {
@@ -1323,7 +1351,7 @@ fieldset {
 .button-view.grid-view {
   width: 48px;
   height: 48px;
-  background-image: url('../img/grid.svg');
+  background-image: url("../img/grid.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1331,7 +1359,7 @@ fieldset {
 .button-view.cards-view {
   width: 48px;
   height: 48px;
-  background-image: url('../img/cards.svg');
+  background-image: url("../img/cards.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1339,7 +1367,7 @@ fieldset {
 .button-view.list-view {
   width: 48px;
   height: 48px;
-  background-image: url('../img/list.svg');
+  background-image: url("../img/list.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1367,6 +1395,7 @@ fieldset {
 
 .favorite.active:focus-visible {
   background-color: #6C9E42;
+  outline: none;
 }
 
 .favorite.active:active {
@@ -1375,9 +1404,13 @@ fieldset {
 }
 
 /* список отелей гридом */
-.hotels-list.grid {
+.hotels-list {
+  list-style: none;
   margin: 0;
   padding: 0;
+}
+
+.hotels-list.grid {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 340px 20px 340px 20px 340px;
@@ -1417,11 +1450,10 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
-  padding: 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
+  width: 100%;
   margin-bottom: 16px;
 }
 
@@ -1430,12 +1462,14 @@ fieldset {
 .hotel-title-link:focus-visible,
 .hotel-title-link:active {
   color: black;
+  outline: none;
+  text-decoration: none;
 }
 
 .hotel-text {
-  display: block;
   margin: 0;
   padding: 0;
+  display: block;
   font-size: 18px;
   line-height: 21px;
 }
@@ -1447,8 +1481,6 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
-  padding: 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1477,8 +1509,6 @@ fieldset {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
-  padding: 0;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -1490,8 +1520,6 @@ fieldset {
 .hotels-list.grid .star-container {
   width: 140px;
   height: 37px;
-  margin: 0;
-  padding: 0;
 }
 
 .hotels-list.grid .rating-text {
@@ -1514,20 +1542,21 @@ fieldset {
 /* Пагинация */
 
 .pagination {
-  margin: 0;
   margin-top: 40px;
-  padding: 0;
   padding-top: 40px;
   border-top: 1px solid #E6E6E6;
 }
 
 .pagination-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 8px;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-wrap: wrap;
 }
 
 .pagination-link {
@@ -1550,6 +1579,7 @@ fieldset {
   line-height: 36px;
   text-align: center;
   color: white;
+  text-decoration: none;
 }
 
 .pagination-link:hover {
@@ -1560,6 +1590,7 @@ fieldset {
 .pagination-link:focus-visible {
   background-color: #68A2CA;
   color: white;
+  outline: none;
 }
 
 .pagination-link:active {
@@ -1585,12 +1616,14 @@ fieldset {
   line-height: 36px;
   text-align: center;
   color: black;
+  text-decoration: none;
 }
 
 .pagination-divider:hover,
 .pagination-divider:focus-visible {
   color: black;
   cursor: default;
+  outline: none;
 }
 
 .pagination-link.active {
@@ -1614,13 +1647,13 @@ fieldset {
 
 .modal {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   position: relative;
   width: 717px;
   margin: auto;
   background-color: #ffffff;
   -webkit-box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.15);
   border-radius: 30px;
   padding: 64px 70px;
 }
@@ -1643,13 +1676,13 @@ fieldset {
 }
 
 .modal-close-button:focus-visible {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   background-color: #E6E6E6;
 }
 
 .modal-close-button:active::before {
   position: absolute;
-  content:"";
+  content: "";
   width: 52px;
   height: 52px;
   top: 0px;
@@ -1660,21 +1693,19 @@ fieldset {
 }
 
 .modal-title {
-  margin: 0;
-  padding: 0;
   text-transform: uppercase;
   font-size: 30px;
   font-weight: 700;
   line-height: 36px;
   letter-spacing: 0em;
   text-align: left;
+  margin: 0;
+  padding: 0;
   margin-bottom: 64px;
 }
 
 .search-form {
   width: 577px;
-  margin: 0;
-  padding: 0;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 137px 110px 88px 131px 111px;
@@ -1966,8 +1997,8 @@ fieldset {
   text-align: left;
   text-transform: capitalize;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+  -ms-grid-row-align: center;
+  align-self: center;
 }
 
 .modal-label-from {
@@ -1985,18 +2016,19 @@ fieldset {
   width: 440px;
   height: 48px;
 }
+
 .modal-date-container::after {
-width: 20px;
-height: 20px;
-content: "";
-background-image: url("../img/calendar.svg");
-background-position: center;
-background-repeat: no-repeat;
-top: 14px;
-right: 20px;
-position: absolute;
-opacity: 30%;
-cursor: pointer;
+  width: 20px;
+  height: 20px;
+  content: "";
+  background-image: url("../img/calendar.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  top: 14px;
+  right: 20px;
+  position: absolute;
+  opacity: 30%;
+  cursor: pointer;
 }
 
 .modal-label-to {
@@ -2114,13 +2146,13 @@ cursor: pointer;
 
 .modal-input {
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   background-color: #F2F2F2;
   border: 0;
   border-radius: 4px;
   -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none;
+  -moz-appearance: none;
+  appearance: none;
   padding: 12px 20px;
   font-size: 18px;
   font-weight: 700;
@@ -2130,13 +2162,16 @@ cursor: pointer;
   width: 440px;
   height: 48px;
 }
+
 .modal-input:hover {
   background-color: #E6E6E6;
 }
+
 .modal-input:focus-visible {
-  border: 3px solid #83B3D3;
+  outline: 3px solid #83B3D3;
   background-color: #E6E6E6;
 }
+
 .modal-quantity-childs,
 .modal-quantity-adults {
   text-align: center;
@@ -2147,9 +2182,10 @@ cursor: pointer;
   text-align: center;
   width: 30px;
   height: 100%;
-  padding: 14px 10px;
+  padding: 14px 0px;
   border-radius: 0;
 }
+
 .modal-count-container {
   position: relative;
   display: flex;
@@ -2166,7 +2202,6 @@ cursor: pointer;
   background-repeat: no-repeat;
   cursor: pointer;
   background-color: transparent;
-  padding: 0;
   opacity: 30%;
 }
 
@@ -2178,14 +2213,15 @@ cursor: pointer;
   background-repeat: no-repeat;
   cursor: pointer;
   background-color: transparent;
-  padding: 0;
   opacity: 30%;
 }
+
 .modal-count-minus:hover,
 .modal-count-plus:hover {
   background-color: transparent;
   opacity: 100%;
 }
+
 .modal-count-minus:focus-visible,
 .modal-count-plus:focus-visible {
   background-color: transparent;
@@ -2212,13 +2248,13 @@ cursor: pointer;
   display: none;
   position: absolute;
   -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   width: 256px;
   padding: 15px 18px 18px 22px;
   background-color: #333333;
   border-radius: 10px;
   -webkit-box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3);
-          box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3);
+  box-shadow: 0px 15px 30px 0px rgba(0, 0, 0, 0.3);
   right: 112px;
   bottom: 25px;
   z-index: 1;
@@ -2240,7 +2276,6 @@ cursor: pointer;
 }
 
 .modal-popover-text {
-  padding: 0;
   font-size: 16px;
   font-weight: 400;
   line-height: 20px;
@@ -2248,7 +2283,6 @@ cursor: pointer;
   text-align: left;
   color: #FFFFFF;
   text-transform: none;
-  margin: 0;
 }
 
 .modal-info:hover + .modal-popover {
