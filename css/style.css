@@ -336,6 +336,7 @@ main {
     cover;
   margin: 0;
   padding: 51px 40px 82px;
+  background-color: rgba(131, 179, 211, 0.2);
 }
 
 .section-text {
@@ -673,6 +674,7 @@ main {
   background-position: top;
   background-size: 100%;
   color: white;
+  background-color: #756157;
 }
 
 .subscribe-text {
@@ -857,6 +859,7 @@ footer .phone:active {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  background-color: #756157;
 }
 
 .page-title {
@@ -1438,7 +1441,6 @@ fieldset {
 .hotels-list.grid .hotel-title {
   font-size: 24px;
   font-weight: 700;
-  line-height: 28px;
   letter-spacing: 0em;
   text-align: left;
   margin: 0;
@@ -1454,13 +1456,17 @@ fieldset {
   -ms-flex-pack: justify;
   justify-content: space-between;
   width: 100%;
+  margin: 0;
   margin-bottom: 16px;
 }
 
-.hotel-title-link,
-.hotel-title-link:hover,
-.hotel-title-link:focus-visible,
-.hotel-title-link:active {
+.hotel-link,
+.hotel-link:hover,
+.hotel-link:focus-visible,
+.hotel-link:active {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
   color: black;
   outline: none;
   text-decoration: none;
