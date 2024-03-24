@@ -118,7 +118,7 @@ img {
 }
 
 .link-button.disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 /* голубая кнопка-действие */
@@ -151,7 +151,7 @@ img {
 }
 
 .blue-button:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .favorite-list:hover {
@@ -988,9 +988,7 @@ img {
 .control:active {
   opacity: 30%;
 }
-.control.disabled {
-  opacity: 20%;
-}
+
 .infrastructure-fieldset {
   margin-right: 70px;
   gap: 16px;
@@ -1033,6 +1031,23 @@ img {
   background-repeat: no-repeat;
 }
 
+.checkbox:disabled + .control-mark {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  position: absolute;
+  left: 0px;
+  top: 1px;
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  background-color: #999999;
+}
+
+.checkbox:disabled ~ .control-name,
+.radio:disabled ~ .control-name {
+  color: rgba(255, 255, 255, 0.3)
+}
+
 .house-type-fieldset {
   margin: 0;
   padding: 0;
@@ -1060,6 +1075,10 @@ img {
   border-radius: 50%;
   top: 5px;
   left: 5px;
+}
+
+.radio:disabled + .control-mark {
+  background-color: #999999;
 }
 
 .range-wrapper-inputs {
@@ -1234,7 +1253,7 @@ img {
 }
 
 .submit-fieldset .submit:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 .submit-fieldset .reset {
@@ -1464,7 +1483,7 @@ img {
 }
 
 .favorite.active:disabled {
-  background-color: #E5E5E5;
+  background-color: #e5e5e5;
 }
 
 /* список отелей гридом */
